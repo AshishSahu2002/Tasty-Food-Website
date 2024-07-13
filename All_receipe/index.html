@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals Section</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon" />
+
+    <!-- Link to your CSS file -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="centered-text" id="cart-container">
+      <p id="heading_text">Tastyfood AI chooses from<br> 5,000+ recipes  </p>
+      <div class="dabba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" id="cart-icon">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+        </svg>
+        <span id="cart-count">0</span>
+        
+      </div>
+    </div>
+    <section class="section-meals">
+      <div class="meals-container">
+        <!-- Meal 1 -->
+        <div class="meal">
+          <img src="/img/meals/meal-1.jpg" class="meal-img" alt="Meal 1" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--vegan">Vegan</span>
+            </div>
+            <h2 class="meal-title">Avocado Salad</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>400</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>92</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.8</strong> rating (441)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 2 -->
+        <div class="meal">
+          <img src="/img/meals/meal-2.jpg" class="meal-img" alt="Meal 2" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Grilled Chicken</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>350</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>85</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.5</strong> rating (312)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 3 -->
+        <div class="meal">
+          <img src="/img/meals/meal-3.jpg" class="meal-img" alt="Meal 3" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Quinoa Salad</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>320</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>90</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (398)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 4 -->
+        <div class="meal">
+          <img src="/img/meals/meal-4.jpg" class="meal-img" alt="Meal 4" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegan">Vegan</span>
+            </div>
+            <h2 class="meal-title">Mushroom Risotto</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>380</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>88</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.6</strong> rating (375)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 5 -->
+        <div class="meal">
+          <img src="/img/meals/meal-5.jpg" class="meal-img" alt="Meal 5" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Vegetable Stir-fry</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>300</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>89</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (322)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 6 -->
+        <div class="meal">
+          <img src="/img/meals/meal-6.jpg" class="meal-img" alt="Meal 6" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegan">Vegan</span>
+            </div>
+            <h2 class="meal-title">Lentil Soup</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>250</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>87</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.5</strong> rating (288)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 7 -->
+        <div class="meal">
+          <img
+            src="/img/gallery/gallery-11.jpg"
+            class="meal-img"
+            alt="Meal 5"
+          />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Vegetable Stir-fry</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>300</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>89</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (322)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 8 -->
+        <div class="meal">
+          <img src="/img/gallery/gallery-4.jpg" class="meal-img" alt="Meal 5" />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Vegetable Stir-fry</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>300</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>89</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (322)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meal 9 -->
+        <div class="meal">
+          <img
+            src="/img/gallery/gallery-5.jpg"
+            class="meal-img"
+            alt="Meal 5"
+          />
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <h2 class="meal-title">Vegetable Stir-fry</h2>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>300</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore ® <strong>89</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (322)</span>
+              </li>
+              <li class="meal-attribute">
+                <button class="add-to-cart">Add to Cart</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const cartIcon = document.getElementById('cart-icon');
+    const cartCount = document.getElementById('cart-count');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    let itemCount = 0;
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        itemCount++;
+        updateCartCount();
+        alert("added to cart");
+      });
+    });
+
+    function updateCartCount() {
+      cartCount.textContent = itemCount;
+    }
+  </script>
+</html>
